@@ -6,8 +6,12 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "apollo-boost": "^0.4.7",
+    "graphql": "^15.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-polls": "^1.2.0",
+    "react-apollo": "^3.1.5",
     "react-scripts": "3.4.1"
   },
   "scripts": {
@@ -29,6 +33,36 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "standard": "^14.3.3"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "src/utils/epubjs/**/*.js",
+      "**/node_modules/**"
+    ],
+    "globals": [
+      "jest",
+      "expect",
+      "test",
+      "describe",
+      "it",
+      "beforeEach",
+      "beforeAll",
+      "afterAll",
+      "shallow",
+      "snapshot",
+      "localStorage",
+      "FileReader",
+      "FormData",
+      "location",
+      "all",
+      "history",
+      "mount",
+      "browser"
     ]
   }
 }
